@@ -1,0 +1,135 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include mixins.card-centered;
+    width: 100%;
+    height: 100vh;
+    font-family: variables.$font-stack;
+    background: url("../assets/images/pattern-background-mobile.svg"),variables.$background-icon-body-font;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.card {
+    width: 19.92rem;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.header__banner {
+    display: block;
+    width: 100%;
+}
+
+.main {
+    text-align: center;
+
+    .main__title {
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: variables.$title;
+    }
+
+    .main__paragraph {
+        margin-bottom: 1.3rem;
+        line-height: 1.5;
+        color: variables.$shadow;
+    }
+
+    .main__plan {
+        @include mixins.main-plan-row;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.3rem;
+        border-radius: 10px;
+        background-color: variables.$background-plan;
+        
+        .p__plan {
+            font-weight: 700;
+            color: variables.$title;
+        }
+
+        .p__price {
+            color: variables.$shadow;
+        }
+
+        .main__link {
+            font-size: small;
+            font-weight: 700;
+            color: variables.$background-btn;
+        }
+
+        .plan__icon {
+            background-color: variables.$background-icon-body-font;
+            border-radius: 50%;
+        }
+    }
+
+    .main__btn {
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 10px;
+        background-color: variables.$background-btn;
+        color: variables.$background-icon-body-font;
+        box-shadow: 0 15px 30px -10px variables.$shadow;
+    }
+
+    .main__order {
+        display: block;
+        margin: 0 0 2rem 0;
+        font-weight: 700;
+        text-decoration: none;
+        color: variables.$shadow;
+    }
+}
+
+.attribution {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    
+    body {
+        background: url("../assets/images/pattern-background-desktop.svg"),variables.$background-icon-body-font;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .card {
+        width: 21rem;
+    }
+
+    .main {
+        padding: 0 1rem;
+    }
+
+    .main__plan {
+        .main__link:hover {
+            display: inline-block;
+            text-decoration: none;
+            color: hsl(245, 83%, 68%);
+            transition: 1s ease;
+        }
+    }
+
+    .main__btn:hover {
+        background-color: hsl(245, 83%, 68%);
+        transition: 1s ease;
+    }
+
+    .main__order:hover {
+        color: variables.$title;
+        transition: 1s ease;
+    }
+}

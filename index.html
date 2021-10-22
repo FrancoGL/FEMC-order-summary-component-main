@@ -5,39 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- Normalize -->
   <link rel="stylesheet" href="./css/normalize.css">
+  <!-- Styles -->
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
 <body>
-  <div class="card-container">
+  <div class="card">
     <header>
-      <img src="./assets/images/illustration-hero.svg" alt="Banner image">
+      <img class="header__banner" src="./assets/images/illustration-hero.svg" alt="Banner image">
     </header>
     <main class="main">
-      <h1>Order Summary</h1>
+      <h1 class="main__title">Order Summary</h1>
   
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
+      <p class="main__paragraph">
+        You can now listen to millions of<br> songs, audiobooks, and podcasts on<br> any
         device anywhere you like!
       </p>
   
-      <div>
-        <img src="./assets/images/icon-music.svg" alt="Icon Music">
+      <div class="main__plan">
+        <img class="plan__icon" src="./assets/images/icon-music.svg" alt="Icon Music">
 
         <p>
-          Annual Plan
-          $59.99/year
+          <span class="p__plan">Annual Plan</span><br>
+          <span class="p__price">$59.99/year</span>
         </p>
 
-        <a href="#">Change</a>
+        <a href="#" class="main__link" >Change</a>
       </div>
   
-      <a href="#">Proceed to Payment</a>
-      <a href="#">Cancel Order</a>
+      <a href="#" class="main__btn">Proceed to Payment</a>
+      <a href="#" class="main__order">Cancel Order</a>
     </main>
   </div>
   <div class="attribution">
