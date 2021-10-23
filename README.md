@@ -14,8 +14,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ![screenshot-desktop](assets/design/desktop-screenshot.png)
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-with-css-W5_eoiHDt)
-- Live Site URL: [Live Site with Vercel](https://profile-card-component-main-blond-chi.vercel.app/)
+- Solution URL: [Pending]()
+- Live Site URL: [Live Site with Vercel](https://femc-order-summary-component-main-francogl.vercel.app/)
 
 ## Built with
 
