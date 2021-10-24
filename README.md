@@ -14,7 +14,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ![screenshot-desktop](assets/design/desktop-screenshot.png)
 ### Links
 
-- Solution URL: [Fronend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-main-html-sass-4woPpLdnP)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-main-html-sass-4woPpLdnP)
 - Live Site URL: [Live Site with Vercel](https://femc-order-summary-component-main-francogl.vercel.app/)
 
 ## Built with
