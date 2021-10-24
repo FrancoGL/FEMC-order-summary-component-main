@@ -93,13 +93,14 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 383px) {
   body {
     background: url("../assets/images/pattern-background-desktop.svg"), #e0e8ff;
     background-repeat: no-repeat;
     background-position: top;
   }
-
+}
+@media (min-width: 768px) {
   .card {
     width: 21rem;
   }
